@@ -1,5 +1,7 @@
 package htl.swp2.Dateiimport.oop.onlineShop.OnlineShop;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class Anschrift {
 
     private String hausnummer;
@@ -44,5 +46,10 @@ public class Anschrift {
 
     public void setStrasse(String strasse) {
         this.strasse = strasse;
+    }
+
+    public String getVollstaendigeAdresse(){
+
+        return stadt  + " " + strasse + " " + plz + " " + hausnummer;
     }
 }

@@ -37,7 +37,9 @@ public class Kunde {
     }
 
     public void kundenProfilAnzeigen(){
-        System.out.println(vorname + nachname + anschrift);
+        System.out.println("Kundendaten:");
+        System.out.println("Vorname: " + vorname + "\nNachname: " + nachname+ "\nAdresse: " + anschrift.getVollstaendigeAdresse());
+        System.out.println("-----------------------------------------------------------------------------------------");
     }
 
 }
