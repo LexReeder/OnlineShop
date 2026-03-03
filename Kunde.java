@@ -1,4 +1,43 @@
 package htl.swp2.Dateiimport.oop.onlineShop.OnlineShop;
 
 public class Kunde {
+
+    private String vorname;
+    private Anschrift anschrift;
+    private String nachname;
+
+    public Kunde(String vorname, String nachname, Anschrift anschrift) {
+        this.vorname = vorname;
+        this.nachname = nachname;
+        this.anschrift = anschrift;
+    }
+
+    public String getVorname() {
+        return vorname;
+    }
+
+    public void setVorname(String vorname) {
+        this.vorname = vorname;
+    }
+
+    public String getNachname() {
+        return nachname;
+    }
+
+    public void setNachname(String nachname) {
+        this.nachname = nachname;
+    }
+
+    public Anschrift getAnschrift() {
+        return anschrift;
+    }
+
+    public void setAnschrift(Anschrift anschrift) {
+        this.anschrift = anschrift;
+    }
+
+    public void kundenProfilAnzeigen(){
+        System.out.println(vorname + nachname + anschrift);
+    }
+
 }
