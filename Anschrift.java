@@ -50,6 +50,6 @@ public class Anschrift {
 
     public String getVollstaendigeAdresse(){
 
-        return stadt  + " " + strasse + " " + plz + " " + hausnummer;
+        return plz  + " " + stadt + " " + strasse + " " + hausnummer;
     }
 }

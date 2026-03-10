@@ -17,9 +17,11 @@ public class Main {
         k3.kundenProfilAnzeigen();
         // Kunde ohne Anschrift erstellen
         Kunde k4 = new Kunde("Simon", "Schober");
-        // Anschrift hinzufügen 
+        // Anschrift hinzufügen
         k4.setAnschrift(a4);
         k4.kundenProfilAnzeigen();
+
+        
 
     }
 }
