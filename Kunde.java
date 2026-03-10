@@ -11,6 +11,11 @@ public class Kunde {
         this.nachname = nachname;
         this.anschrift = anschrift;
     }
+    // zweiter Konstrukter für Kunde ohne Adresse
+    public Kunde(String vorname, String nachname) {
+        this.vorname = vorname;
+        this.nachname = nachname;
+    }
 
     public String getVorname() {
         return vorname;
