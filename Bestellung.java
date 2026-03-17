@@ -20,13 +20,20 @@ public class Bestellung {
 
     public void rechnungDrucken(){
         System.out.println("RECHNUNG NR: "+ bestellNummer);
-        kunde.kundenProfilAnzeigen();
+        // kunde.kundenProfilAnzeigen();   // Delegation an die Kunden-Klasse
+        kunde.getKundenProfilAnzeigen();
         System.out.println("------------------------------------------------------");
         double gSumme = 0;
         // alle Produkte zusammenzählen
         for(Produkt p:warenkorb){
             gSumme += p.getBruttoPreis();
         }
-        System.out.println("Gesamtpreis: "+ gSumme);
+        double ergebnis = Math.round(gSumme * 100.0)/100.0;
+        System.out.println("Gesamtpreis: "+ ergebnis);
+    }
+
+    public void produktEntfernen(Produkt produkt){
+        warenkorb.remove(produkt);
+
     }
 }

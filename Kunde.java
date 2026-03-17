@@ -47,4 +47,17 @@ public class Kunde {
         System.out.println("-----------------------------------------------------------------------------------------");
     }
 
+    public String getKundenProfilAnzeigen() {
+        String kundenProfil = "Kundendaten:\n" +
+                "Vorname: " + vorname + "\n" +
+                "Nachname: " + nachname + "\n" +
+                "Adresse: " + anschrift.getVollstaendigeAdresse() + "\n" +
+                "------------------------------------------------------";
+
+        System.out.println(kundenProfil);
+        return kundenProfil;
+    }
+
+
+
 }

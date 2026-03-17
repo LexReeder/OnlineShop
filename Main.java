@@ -21,7 +21,20 @@ public class Main {
         k4.setAnschrift(a4);
         k4.kundenProfilAnzeigen();
 
-        
+        Produkt p1 = new Produkt("Laptop", 999.999, 0.20);
+        Produkt p2 = new Produkt("Smartphone", 500.00, 0.20);
+        Produkt p3 = new Produkt("Waschmaschine", 245.94, 0.20);
+
+        Bestellung b = new Bestellung(101, k4);
+        b.produktHinzufuegen(p1);
+        b.produktHinzufuegen(p2);
+        b.produktHinzufuegen(p3);
+
+        b.rechnungDrucken();
+
+        b.produktEntfernen(p1);
+
+
 
     }
 }
